@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 05 - DOM Practice</title>
+    <script>
+        window.addEventListener("load", function() {
+            var bttn = window.document.getElementById("step5");
+            bttn.addEventListener("click", function() {
+                "use strict";
+                window.alert("I have been clicked.");
+            });
+
+        });
+
+
+
+        
+    </script>
+    
+</head>
+<body>
+    <button onclick="step1()">Click me!1</button><br><br>
+    <button id="step2">Click me!2</button><br><br>
+    <button id="step3">Click me!3</button><br><br>
+    <button id="step4">Click me!4</button><br><br>
+    <button id="step5">Click me!5</button><br><br>
+    <a href="www.google.com" id="redirect">Visit Google</a><br><br>
+    <input type="text" id="textbox"><br>
+    <button id="step7">Click me!7</button><br><br>
+    <button id="step8">Click me!8</button><br><br>
+    <button id="start">Start</button><br>
+    <button id="stop">Stop</button><br><br>
+    <label>Choose one: </label>
+    <select id="items">
+        <option>Top</option>
+        <option>Bottom</option>
+        <option>Left</option>
+        <option>Right</option>        
+    </select>
+    <button id="step10">Select</button>
+
+
+
+
+    <script src="js/dom-practice.js"></script>
+</body>
+</html>
