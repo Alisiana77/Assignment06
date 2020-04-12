@@ -1,5 +1,11 @@
 /*eslint-env browser*/
 window.addEventListener("load", function() {
+
+
+    let addClick = window.document.getElementById("addbtn");
+    addClick.addEventListener("click", function () {
+        addBtn(employees);
+    });
     
     let tableContent = window.document.getElementById("contentlist");
     tableContent.addEventListener("click", function() {
