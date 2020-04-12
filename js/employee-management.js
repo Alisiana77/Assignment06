@@ -61,11 +61,12 @@ function addName(employees) {
     let name = window.document.getElementById("name");
     let title = window.document.getElementById("title");
     let extension = window.document.getElementById("extension");
+  
+    employees.push([name.value, title.value, extension.value]);
+
     name.value = "";
     title.value = "";
     extension.value = "";
-    employees.push([name.value, title.value, extension.value]);
-
     
 
 };
