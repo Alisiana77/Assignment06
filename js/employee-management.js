@@ -26,6 +26,7 @@ function display(employees) {
     "use strict";
     // window.alert("contentlist");
     let content = window.document.getElementById("contentlist");
+    let number = window.document.getElementById("eeNumber");
     
     let contentHtml = "";
     let data;
@@ -41,7 +42,7 @@ function display(employees) {
               
     }
     content.innerHTML = contentHtml; 
-
+    number.innerHTML  = employees.length;
 };
 
 let employees = [
@@ -87,9 +88,9 @@ function dataCheck() {
     let extension = window.document.getElementById("extenstionAlert").value;
     let addData = true;
 
-    nameAlert.innerHTML = "";
-    titleAlert.innerHTML = "";
-    extenstionAlert.innerHTML = "";
+    name.innerHTML = "";
+    title.innerHTML = "";
+    extension.innerHTML = "";
 
     if (name === null) {
         addData = false;
