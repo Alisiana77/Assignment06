@@ -83,26 +83,29 @@ function delName(employees, event) {
 };
 function dataCheck() {
     "use strict";
-    let name = window.document.getElementById("nameAlert").value;
-    let title = window.document.getElementById("titleAlert").value;
-    let extension = window.document.getElementById("extenstionAlert").value;
+    let name = window.document.getElementById("name").value;
+    let title = window.document.getElementById("title").value;
+    let extension = window.document.getElementById("extension").value;
+    let nameAlert = window.document.getElementById("nameAlert");
+    let titleAlert = window.document.getElementById("titleAlert");
+    let extensionAlert = window.document.getElementById("extensionAlert");
     let addData = true;
 
-    name.innerHTML = "";
-    title.innerHTML = "";
-    extension.innerHTML = "";
+    nameAlert.innerHTML = "";
+    titleAlert.innerHTML = "";
+    extensionAlert.innerHTML = "";
 
-    if (name === null) {
+    if (name === "") {
         addData = false;
         nameAlert.innerHTML = "Enter a name of employee you want to add.";
     }
-    if (title === null) {
+    if (title === "") {
         addData = false;
         titleAlert.innerHTML = "Enter a title of an employee.";
     }
-    if (extension === null) {
+    if (extension === "") {
         addData = false;
-        extenstionAlert.innerHTML = "Enter employee's extension.";
+        extensionAlert.innerHTML = "Enter employee's extension.";
     }
     return addData;
 };
